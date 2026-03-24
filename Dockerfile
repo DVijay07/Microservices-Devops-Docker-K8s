@@ -1,13 +1,13 @@
 
-
-
 From python:3.10-slim
 
 WORKDIR /app
 
-Copy worker.py .
+Copy ../requirements.txt .
 
-Run pip install  redis
+Run pip install  -r requirements.txt
 
-CMD ["python", "worker.py"]
+Copy app.py .
+
+CMD ["python", "app.py"]
 
